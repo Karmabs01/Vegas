@@ -1,0 +1,27 @@
+.select-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.select-brand select {
+  background-color: var(--darker-second-color);
+  border: none;
+  color: #fff;
+  /* background: linear-gradient(to top, #fdf0ea 50%, transparent 50%); */
+  font-weight: 700;
+  font-size: 1.5em;
+  font-weight: bold;
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid #D83F87;
+  text-align: center;
+  padding: 10px 32px 10px 25px;
+  border-radius: 12px;
+  background-image: url(/src/arrow-down.png);
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}

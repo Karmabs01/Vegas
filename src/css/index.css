@@ -1,0 +1,286 @@
+/*Goole Font Use*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap");
+
+/*** 
+====================================================================
+	Css Files
+====================================================================
+***/
+
+/* @import url(responsive.css); */
+@import url(flags.css);
+@import url(header.css);
+@import url(countrySelect.css);
+@import url(footer.css);
+@import url(main.css);
+@import url(_color-mode.scss);
+
+
+/*** 
+====================================================================
+	Colors
+====================================================================
+***/
+:root {
+
+
+  --white-color: #fff;
+  --black-color: #000000;
+
+  --header-background-color: #000000;
+  --background-color: #000000 ;
+  --footer-background-color: #000000;
+  
+  --button-line_color: #464646;
+  --button-back_color: #5bffce9c;
+  --header-font-color: #ffffff;
+  --font-color: #fff ;
+  --second-color: #D83F87;
+  --darker-second-color: #685e09;
+  --pragraph-color: #494949;  
+  --theme-color: #4d4634;
+  --base-color: #312506;
+  --ratting-color: #363a35;
+  --card-background: #faf4d7;
+  --brand-unavailable-color: #312506a8;
+
+  --background-gradient: linear-gradient(180deg, #13081d, #13081d, #28123d);
+  --gradient: linear-gradient(140deg, rgba(255,223,33,0.773546918767507) 36%, rgba(223,63,69,0.6979166666666667) 77%);;
+  --border: 1px solid var(--border-color);
+  --border-color: rgba(70, 34, 0, 0.658);
+}
+
+/*** 
+====================================================================
+	MUI
+====================================================================
+***/
+
+.fixed-position {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.MuiSelect-select {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: var(--font-color) !important;
+  font-size: 20px !important;
+  position: relative;
+}
+
+.MuiIconButton-root {
+  background-color: #ffffff !important;
+}
+
+header .MuiSelect-select {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: var(--header-font-color) !important;
+  font-size: 20px !important;
+  position: relative;
+}
+
+.MuiOutlinedInput-notchedOutline, .MuiInputBase-root {
+  border-color: var(--border-color)!important;
+}
+.MuiSvgIcon-root {
+  fill: var(--border-color) !important;
+}
+.MuiFormLabel-root {
+  color: var(--border-color) !important;
+}
+
+.MuiMenu-list {
+  max-height: 300px !important;
+}
+
+/*** 
+====================================================================
+	Page 
+====================================================================
+***/
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+html::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+body {
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  overflow-x: hidden !important;
+
+  color: var(--black-color);
+  padding: 0;
+  margin: 0;
+  background: var(--background-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper .container img {
+  border-radius: 10px;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+a {
+  transition: all 0.3s ease-out 0s;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: var(--theme-color);
+}
+
+i,
+span,
+a {
+  display: inline-block;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900;
+  margin: 0;
+  color: var(--font-color);
+  line-height: 60px;
+  line-height: inherit;
+  margin-bottom: 30px;
+
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.error {
+  color: #ff4500;
+}
+
+.success {
+  color: #008000;
+}
+
+input:focus {
+  color: var(--white-color);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0;
+  color: var(--pragraph-color);
+}
+
+.no-available-brands {
+  color: var(--brand-unavailable-color);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 104%;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0 auto !important;
+}
+
+
+
+
+/* replace */
+.experience img {
+  border-radius: 50% !important; 
+  filter: drop-shadow(0 0 0.75rem #D73F87);
+  width: 200px;
+}
+
+.image-icon {
+  padding: 5px; 
+}
+
+.owl-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

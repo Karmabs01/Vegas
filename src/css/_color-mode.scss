@@ -1,0 +1,119 @@
+.svg-sprt {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.125em;
+    fill: currentcolor;
+}
+
+nav {
+    position: relative;
+
+    @media screen and (max-width:$break-medium) {
+        .navbar-brand {
+            width: 60%;
+        }
+    }
+
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+
+    .dropdown {
+
+        button {
+            color: inherit;
+            box-shadow: none;
+        }
+
+        .dropdown-menu {
+            width: auto;
+            border-radius: 0;
+            padding: 0;
+            min-width: auto;
+
+            li {
+                width: auto;
+
+                .dropdown-item {
+                    width: auto;
+                    margin: 0;
+                    padding: 6px;
+
+                    &:active,
+                    &.active {
+                        background-color: $theme-link-color;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+
+    body {
+        background-color: $theme-accent-one;
+    }
+
+    .header {
+        background-color: $theme-accent-one;
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $theme-color-white;
+                }
+
+                .dropdown-menu {
+                    background-color: $theme-accent-one;
+                    @include theme-shadow;
+
+                    .dropdown-item {
+                        color: $theme-color-white;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .hero {
+        &::before {
+            background: linear-gradient(270deg, rgba($theme-accent-one, 1) 0%, rgba($theme-accent-one, 0.85) 100%);
+        }
+    }
+
+    .experience {
+
+        .step-card {
+            &:before {
+                background: rgba($theme-primary-color, 0.2);
+            }
+        }
+    }
+
+    .footer {
+
+        h1,
+        h2,
+        h3 {
+            color: $theme-color-white;
+        }
+
+        p {
+            color: $theme-accent-two;
+        }
+
+
+    }
+
+    .contact {
+
+        &:before {
+            background: rgba($theme-accent-one, 0.77);
+
+        }
+    }
