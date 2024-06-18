@@ -163,7 +163,7 @@ function OtherBrands({
                         </div>
                       </a>
                       <div className="step-corner">
-                        <div className="step-arrow fw-bold">0{index + 1}</div>
+                        <div className="step-arrow fw-bold">{index + 1}</div>
                       </div>
                     </div>
                   </div>

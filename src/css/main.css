@@ -732,7 +732,7 @@ nav {
   }
 }
 .experience .step-card {
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -745,7 +745,7 @@ nav {
   z-index: -1;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(54, 6, 46, 0.514);
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
