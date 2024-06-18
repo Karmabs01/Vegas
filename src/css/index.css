@@ -47,7 +47,7 @@
   --background-gradient: linear-gradient(180deg, #13081d, #13081d, #28123d);
   --gradient: linear-gradient(140deg, rgba(255,223,33,0.773546918767507) 36%, rgba(223,63,69,0.6979166666666667) 77%);;
   --border: 1px solid var(--border-color);
-  --border-color: rgba(70, 34, 0, 0.658);
+  --border-color: #D83F87;
 }
 
 /*** 
