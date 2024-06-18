@@ -284,3 +284,7 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+.hero .owl-item {
+  height: 100px !important;
+}

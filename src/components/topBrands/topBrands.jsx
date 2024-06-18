@@ -47,6 +47,12 @@ function TopBrands({
   const api1043 = "https://bonusnumber1.com/api/brandsNew3/read.php";
   const api1044 = "https://bonusnumber1.com/api/brandsNew4/read.php";
 
+  const [carouselKey, setCarouselKey] = useState(0);
+
+  useEffect(() => {
+    setCarouselKey(prevKey => prevKey + 1);
+  }, [data]);
+
   function showData(array) {
     const showedArray = array.slice(); // Создаем копию массива
     //Обрезка массива до step элементов, чтобы было по шаблону
@@ -189,7 +195,7 @@ function TopBrands({
                 </div>
               </div>
             </div>
-            <OwlCarousel className='owl-carousel owl-theme' loop margin={10} id="carouselTrending" nav  {...options}>
+            <OwlCarousel key={carouselKey} className='owl-carousel owl-theme' loop margin={10} id="carouselTrending" nav  {...options}>
 
               {data.map((rowData, index) => (
                 <div className="item mb-3 mb-lg-0" key={index} data-aos="fade-up">
