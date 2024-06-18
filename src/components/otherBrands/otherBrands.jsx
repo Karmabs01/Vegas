@@ -148,10 +148,10 @@ function OtherBrands({
               </div>
             </div>
             <div className="row mt-5 mb-lg-5 position-relative">
-              <div className="line"></div>
+              {/* <div className="line"></div> */}
               {otherData.length > 0 ? (
                 otherData.map((rowData, index) => (
-                  <div key={index} className="col-12 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up">
+                  <div key={index} className="col-12 col-lg-4 col-sm-6 mb-4 mb-lg-0" data-aos="fade-up">
                     <div className="text-center step-card">
                       <figure className="mb-0 image-icon">
                         <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
