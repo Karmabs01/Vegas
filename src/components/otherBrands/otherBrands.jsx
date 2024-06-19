@@ -143,8 +143,8 @@ function OtherBrands({
           <div className="container">
             <div className="row">
               <div className="col-12 col-lg-12">
-                <p className="mt-0 mt-lg-5 mb-3 theme-text-primary fs-4 fw-bold" data-aos="fade-up">Extraordinary Features</p>
-                <h2 className="display-1 mb-3 font-black heading" data-aos="fade-up">MoGame Features</h2>
+                <p className="mt-0 mt-lg-5 mb-3 theme-text-primary fs-4 fw-bold" data-aos="fade-up">{t("Best deals inside")}</p>
+                <h2 className="display-1 mb-3 font-black heading" data-aos="fade-up">{t("Vegas Hot Deals")}</h2>
               </div>
             </div>
             <div className="row mt-5 mb-lg-5 position-relative">

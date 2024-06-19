@@ -184,8 +184,8 @@ function TopBrands({
           <div className="container">
             <div className="row align-items-center">
               <div className="col-12 col-lg-8 mb-5 mb-lg-0">
-                <p className="mt-5 mb-3 theme-text-primary fs-4 fw-bold" data-aos="fade-up">Our Games</p>
-                <h2 className="display-1 font-black mb-3 heading" data-aos="fade-up">Trending Games</h2>
+                <p className="mt-5 mb-3 theme-text-primary fs-4 fw-bold" data-aos="fade-up">{t("Top-rated casinos")}</p>
+                <h2 className="display-1 font-black mb-3 heading" data-aos="fade-up">{t("Vegas Top Picks")}</h2>
               </div>
               <div className="col-12 col-lg-4">
                 <div className="owl-theme">

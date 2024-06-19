@@ -185,9 +185,9 @@ function AnotherBrands({
         <div className="container mt-5">
           <div className="row align-items-center">
             <div className="col-12 col-lg-6 position-relative align-self-center" data-aos="fade-up">
-              <p className="sub-heading mt-5 mb-3 fs-4 fw-bold theme-text-primary">Discover your next Play Games</p>
-              <h1 className="display-1 text-uppercase mb-3 font-black max theme-text-white">Gaming World</h1>
-              <p className="fs-5 mb-0 theme-text-white">High Quality Video Online Games</p>
+              <p className="sub-heading mt-5 mb-3 fs-4 fw-bold theme-text-primary">{t("Discover the Best Online Casino Offers")}</p>
+              <h1 className="display-1 text-uppercase mb-3 font-black max theme-text-white">{t("Try Your Luck in Las Vegas!")}</h1>
+              <p className="fs-5 mb-0 theme-text-white">{t("Exclusive deals, big wins await!")}</p>
               <div className="group mt-5 btn-wrap">
                 {otherData.length > 0 ? (
                   otherData.slice(0, 1).map((rowData, index) => (
