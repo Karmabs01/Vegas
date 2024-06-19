@@ -12,7 +12,8 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const options = {
   loop: true,
-  margin: 10,
+  margin: 20,
+  items: 3,
   responsive: {
     0: {
       items: 1
@@ -183,16 +184,9 @@ function TopBrands({
         <section className="trending py-5" id="experience">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-12 col-lg-8 mb-5 mb-lg-0">
+              <div className="col-12 col-lg-12 mb-12 mb-lg-0">
                 <p className="mt-5 mb-3 theme-text-primary fs-4 fw-bold" data-aos="fade-up">{t("Top-rated casinos")}</p>
                 <h2 className="display-1 font-black mb-3 heading" data-aos="fade-up">{t("Vegas Top Picks")}</h2>
-              </div>
-              <div className="col-12 col-lg-4">
-                <div className="owl-theme">
-                  <div className="owl-controls">
-                    <div className="custom-nav owl-nav"></div>
-                  </div>
-                </div>
               </div>
             </div>
             <OwlCarousel key={carouselKey} className='owl-carousel owl-theme' loop margin={10} id="carouselTrending" nav  {...options}>
