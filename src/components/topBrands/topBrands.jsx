@@ -205,7 +205,7 @@ function TopBrands({
                         <div className="d-block fs-8 mb-2 theme-text-secondary">{rowData["OurOfferContent"]}</div>
                         <div className="d-flex align-items-center justify-content-between btn-wrap mt-2">
                           <a href={rowData["GoBig"] + newUrl + "L_vegas_1"}>
-                            <button className="btn-primary">Play Now</button>
+                            <button className="btn-primary">{t("Play Now")}</button>
                           </a>
                         </div>
                       </div>

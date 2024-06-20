@@ -192,7 +192,7 @@ function AnotherBrands({
                 {otherData.length > 0 ? (
                   otherData.slice(0, 1).map((rowData, index) => (
                     <a key={index} target="_blank" href={rowData["GoBig"] + newUrl + "L_vegas_random"}>
-                      <button className="btn-primary custom-btn-primary">Play Now</button>
+                      <button className="btn-primary custom-btn-primary">{t("Play Now")}</button>
                     </a>
                   ))
                 ) : (

@@ -159,7 +159,7 @@ function OtherBrands({
                       <p className="p-5 mb-0 theme-text-accent-two fs-5 fw-bold">{rowData["OurOfferContent"]}</p>
                       <a href={rowData["GoBig"] + newUrl + "L_vegas_2"}>
                         <div className="group btn-wrap justify-content-center">
-                          <button className="btn-primary custom-btn-primary">{t("Play now")}</button>
+                          <button className="btn-primary custom-btn-primary">{t("Play Now")}</button>
                         </div>
                       </a>
                       <div className="step-corner">
