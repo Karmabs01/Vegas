@@ -195,8 +195,8 @@ function TimerBrands({
           <div className="row">
             <div className="col-12">
               <div className="text-center">
-                <p className="mb-3 theme-text-primary fs-4 fw-bold" data-aos="fade-up">Final Call: Act Fast!</p>
-                <h1 className="display-1 mb-3 font-black heading" data-aos="fade-up">Limited Time offers</h1>
+                <p className="mb-3 theme-text-primary fs-4 fw-bold" data-aos="fade-up">{t("Final Call: Act Fast!")}</p>
+                <h1 className="display-1 mb-3 font-black heading" data-aos="fade-up">{t("Limited Time offers")}</h1>
               </div>
               <div className="row mt-5 align-items-center">
               {otherData.length > 0 ? (
