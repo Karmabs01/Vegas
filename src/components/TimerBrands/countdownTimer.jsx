@@ -12,7 +12,7 @@ const ExpiredNotice = () => {
 
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
   return (
-    <p id="timer" className="m-auto">
+    <div id="timer" className="m-auto">
       <div>
         <p>{days}</p>
         <span>{'DAYS'}</span>
@@ -29,7 +29,7 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
         <p>{seconds}</p>
         <span>{'SEC'}</span>
       </div>
-    </p>
+    </div>
   );
 };
 

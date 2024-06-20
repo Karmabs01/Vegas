@@ -22,10 +22,10 @@ function TimerBrands({
   const [otherData, setOtherData] = useState([]);
   const [visibleBrands, setVisibleBrands] = useState(8);
 
-  const THREE_DAYS_IN_MS = 1 * 12 * 60 * 60 * 1000;
+  const DAYS_IN_MS = 1 * 12 * 60 * 60 * 1000;
   const NOW_IN_MS = new Date().getTime();
 
-  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+  const dateTime = NOW_IN_MS + DAYS_IN_MS;
 
   const handleShowMore = () => {
     setVisibleBrands((prevVisibleBrands) => prevVisibleBrands + 8);
@@ -112,7 +112,6 @@ function TimerBrands({
           // Перемешиваем данные перед отображением
           setOtherData(shuffleArray(filteredDataOther));
           setLoading(false);
-          updateTimer()
 
           // Если нет брендов, вызывать setSelectedCountry
           // if (filteredDataOther.length === 0) {
@@ -199,18 +198,14 @@ function TimerBrands({
               <div className="row mt-5 align-items-center">
               {otherData.length > 0 ? (
                   otherData.slice(0, 1).map((rowData, index) => (
-                    // <a key={index} target="_blank" href={rowData["GoBig"] + newUrl + "L_vegas_random"}>
-                    //   <button className="btn-primary custom-btn-primary">{t("Try Your Luck!")}</button>
-                    // </a>
-                     <div className="col-12 col-md-6 col-lg-3 offset-lg-1" data-aos="fade-up">
+                     <div key={index} className="col-12 col-md-6 col-lg-3 offset-lg-1" data-aos="fade-up">
                      <div className="game-card text-center py-4 mb-4">
                        <figure className="mb-0 icon-bg">
                        <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
-                         {/* <img src="assets/images/games/teamA-logo.png" className="img-fluid" alt="Fantasy Games"/> */}
                        </figure>
                        <h3 className="h2 fw-bold mb-3 mt-3">{rowData["CasinoBrand"]}</h3>
                        <p className="fs-6 fw-bold theme-text-primary mb-3">{rowData["OurOfferContent"]}</p>
-                        <a key={index} className="group btn-wrap justify-content-center" target="_blank" href={rowData["GoBig"] + newUrl + "L_vegas_random_2"}>
+                        <a  className="group btn-wrap justify-content-center" target="_blank" href={rowData["GoBig"] + newUrl + "L_vegas_random_2"}>
                          <button className="btn-primary custom-btn-primary">{t("Try Your Luck!")}</button>
                        </a>
                      </div>
@@ -222,24 +217,16 @@ function TimerBrands({
                
                 <div className="col-12 col-md-6 col-lg-4" data-aos="fade-up">
                   <div className="text-center py-4 mb-4">
-                    <CountdownTimer targetDate={dateTimeAfterThreeDays} />
-                    {/* <h3 className="display-2 font-black theme-text-primary mb-0 mt-5">VS</h3> */}
-                    {/* <div className="group mt-5 btn-wrap justify-content-center">
-                      <button className="btn-primary custom-btn-primary">Participate</button>
-                    </div> */}
+                    <CountdownTimer targetDate={dateTime} />
                   </div>
                 </div>
                 
                 {otherData.length > 0 ? (
                   otherData.slice(1, 2).map((rowData, index) => (
-                    // <a key={index} target="_blank" href={rowData["GoBig"] + newUrl + "L_vegas_random"}>
-                    //   <button className="btn-primary custom-btn-primary">{t("Try Your Luck!")}</button>
-                    // </a>
-                     <div className="col-12 col-md-6 col-lg-3" data-aos="fade-up">
+                     <div key={index} className="col-12 col-md-6 col-lg-3" data-aos="fade-up">
                      <div className="game-card text-center py-4 mb-4">
                        <figure className="mb-0 icon-bg">
                        <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
-                         {/* <img src="assets/images/games/teamA-logo.png" className="img-fluid" alt="Fantasy Games"/> */}
                        </figure>
                        <h3 className="h2 fw-bold mb-3 mt-3">{rowData["CasinoBrand"]}</h3>
                        <p className="fs-6 fw-bold theme-text-primary mb-3">{rowData["OurOfferContent"]}</p>
