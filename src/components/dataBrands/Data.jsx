@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import OtherBrands from "../otherBrands/otherBrands";
+import TimerBrands from "../TimerBrands/timerBrands";
 import TopBrands from "../topBrands/topBrands";
 import AnotherBrands from "../AnotherBrands/AnotherBrands";
 import { useTranslation } from "react-i18next";
@@ -45,7 +46,7 @@ function ChildComponent() {
     { code: "all", name: "World", flag: "🌍" },
   ];
   const countryOptions1043 = [
-    { code: "all", name: "World", flag: "🌍" }, 
+    { code: "all", name: "World", flag: "🌍" },
     { code: "ca", name: "Canada", flag: "🇨🇦" },
   ];
 
@@ -171,89 +172,89 @@ function ChildComponent() {
       />
       {source === "partner1043" && (
         <div className="select-brand container">
-        <Box sx={{ m: 1, minWidth: 300 }}>
-          <FormControl fullWidth>
-            <InputLabel>{t("select")}</InputLabel>
-            <Select
-              id="countrySelect"
-              value={selectedCountry}
-              label={t("select")}
-              ref={selectRef}
-              onMouseDown={handleMouseDown}
-              onChange={(e) => handleCountryChange(e.target.value)}
-            >
-              {countryOptions1043.map((country, index) => (
-                <MenuItem
-                  key={index}
-                  value={country.code}
-                  selected={country.code === ipDataCode}
-                >
-                  <div className={country.code}></div>
-                  {country.name}
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
-        </Box>
-      </div>
+          <Box sx={{ m: 1, minWidth: 300 }}>
+            <FormControl fullWidth>
+              <InputLabel>{t("select")}</InputLabel>
+              <Select
+                id="countrySelect"
+                value={selectedCountry}
+                label={t("select")}
+                ref={selectRef}
+                onMouseDown={handleMouseDown}
+                onChange={(e) => handleCountryChange(e.target.value)}
+              >
+                {countryOptions1043.map((country, index) => (
+                  <MenuItem
+                    key={index}
+                    value={country.code}
+                    selected={country.code === ipDataCode}
+                  >
+                    <div className={country.code}></div>
+                    {country.name}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          </Box>
+        </div>
       )}
       {source === "partner1044" && (
         <div className="select-brand container">
-        <Box sx={{ m: 1, minWidth: 300 }}>
-          <FormControl fullWidth>
-            <InputLabel>{t("select")}</InputLabel>
-            <Select
-              id="countrySelect"
-              value={selectedCountry}
-              label={t("select")}
-              ref={selectRef}
-              onMouseDown={handleMouseDown}
-              onChange={(e) => handleCountryChange(e.target.value)}
-            >
-              {countryOptions1044.map((country, index) => (
-                <MenuItem
-                  key={index}
-                  value={country.code}
-                  selected={country.code === ipDataCode}
-                >
-                  <div className={country.code}></div>
-                  {country.name}
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
-        </Box>
-      </div>
+          <Box sx={{ m: 1, minWidth: 300 }}>
+            <FormControl fullWidth>
+              <InputLabel>{t("select")}</InputLabel>
+              <Select
+                id="countrySelect"
+                value={selectedCountry}
+                label={t("select")}
+                ref={selectRef}
+                onMouseDown={handleMouseDown}
+                onChange={(e) => handleCountryChange(e.target.value)}
+              >
+                {countryOptions1044.map((country, index) => (
+                  <MenuItem
+                    key={index}
+                    value={country.code}
+                    selected={country.code === ipDataCode}
+                  >
+                    <div className={country.code}></div>
+                    {country.name}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          </Box>
+        </div>
       )}
-       {source === "partner1039" && (
+      {source === "partner1039" && (
         <div className="select-brand container">
-        <Box sx={{ m: 1, minWidth: 300 }}>
-          <FormControl fullWidth>
-            <InputLabel>{t("select")}</InputLabel>
-            <Select
-              id="countrySelect"
-              value={selectedCountry}
-              label={t("select")}
-              ref={selectRef}
-              onMouseDown={handleMouseDown}
-              onChange={(e) => handleCountryChange(e.target.value)}
-            >
-              {countryOptions1039.map((country, index) => (
-                <MenuItem
-                  key={index}
-                  value={country.code}
-                  selected={country.code === ipDataCode}
-                >
-                  <div className={country.code}></div>
-                  {country.name}
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
-        </Box>
-      </div>
+          <Box sx={{ m: 1, minWidth: 300 }}>
+            <FormControl fullWidth>
+              <InputLabel>{t("select")}</InputLabel>
+              <Select
+                id="countrySelect"
+                value={selectedCountry}
+                label={t("select")}
+                ref={selectRef}
+                onMouseDown={handleMouseDown}
+                onChange={(e) => handleCountryChange(e.target.value)}
+              >
+                {countryOptions1039.map((country, index) => (
+                  <MenuItem
+                    key={index}
+                    value={country.code}
+                    selected={country.code === ipDataCode}
+                  >
+                    <div className={country.code}></div>
+                    {country.name}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          </Box>
+        </div>
       )}
-      {source !== "partner1044" && source !== "partner1043" && source !== "partner1039" &&  (
+      {source !== "partner1044" && source !== "partner1043" && source !== "partner1039" && (
         <div className="select-brand container">
           <Box sx={{ m: 1, minWidth: 300 }}>
             <FormControl fullWidth>
@@ -291,6 +292,16 @@ function ChildComponent() {
         setSelectedCountry={setSelectedCountry}
       />
 
+      <TimerBrands
+        newUrl={newUrl}
+        ipData={ipData}
+        ipDataCode={ipDataCode}
+        currentLanguage={i18n.language}
+        source={source}
+        selectedCountry={selectedCountry}
+        setSelectedCountry={setSelectedCountry}
+      />
+
       <OtherBrands
         newUrl={newUrl}
         ipData={ipData}
@@ -300,6 +311,8 @@ function ChildComponent() {
         selectedCountry={selectedCountry}
         setSelectedCountry={setSelectedCountry}
       />
+
+
     </div>
   );
 }

@@ -186,13 +186,13 @@ function AnotherBrands({
           <div className="row align-items-center">
             <div className="col-12 col-lg-6 position-relative align-self-center" data-aos="fade-up">
               <p className="sub-heading mt-5 mb-3 fs-4 fw-bold theme-text-primary">{t("Discover the Best Online Casino Offers")}</p>
-              <h1 className="display-1 text-uppercase mb-3 font-black max theme-text-white">{t("Try Your Luck in Las Vegas!")}</h1>
+              <h1 className="display-1 text-uppercase font-black max theme-text-white">{t("Las Vegas Adventure Starts Here")}</h1>
               <p className="fs-5 mb-0 theme-text-white">{t("Exclusive deals, big wins await!")}</p>
               <div className="group mt-5 btn-wrap">
                 {otherData.length > 0 ? (
                   otherData.slice(0, 1).map((rowData, index) => (
                     <a key={index} target="_blank" href={rowData["GoBig"] + newUrl + "L_vegas_random"}>
-                      <button className="btn-primary custom-btn-primary">{t("Play Now")}</button>
+                      <button className="btn-primary custom-btn-primary">{t("Try Your Luck!")}</button>
                     </a>
                   ))
                 ) : (

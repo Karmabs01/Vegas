@@ -829,6 +829,11 @@ nav {
 .games #timer div:last-child {
   border-right: none;
 }
+.games #timer div p {
+  font-size: 24px;
+  font-weight: 600;
+  color: #D83F87;
+}
 .games #timer div span {
   color: #A4B3B6;
   display: block;
