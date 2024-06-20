@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-import heroPic from "../../images/hero/hero-pic.png";
+import heroPic from "../../images/hero/hero-pic1.png";
 
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -213,7 +213,7 @@ function AnotherBrands({
           </div>
         </div>
         <div className="container my-5">
-          <OwlCarousel className='owl-carousel owl-theme' id="carouselPartner" loop margin={10} nav  {...options}>
+          {/* <OwlCarousel className='owl-carousel owl-theme' id="carouselPartner" loop margin={10} nav  {...options}>
 
             <div className="col w-auto">
               <img src={logo1} alt={logo1} />
@@ -230,7 +230,7 @@ function AnotherBrands({
             <div className="col w-auto">
               <img src={logo5} alt={logo5} />
             </div>
-          </OwlCarousel>;
+          </OwlCarousel>; */}
 
         </div>
       </div>

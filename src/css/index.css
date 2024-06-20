@@ -288,3 +288,8 @@ p {
 .hero .owl-item {
   height: 100px !important;
 }
+
+.games .row .row{
+  background-color: #ffffff49;
+  border-radius: 25px;
+}

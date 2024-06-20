@@ -646,7 +646,7 @@ nav {
   background-position: center center;
   position: relative;
   background-size: cover;
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -665,11 +665,11 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
 }
 @media screen and (max-width: 767px) {
   .hero .bground:before {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
   }
 }
 .hero .shape-wrap img {
@@ -779,6 +779,83 @@ nav {
 .games {
   position: relative;
 }
+.games .leftImage{
+  content: '';
+  position: absolute;
+  left: 110px;
+  top: -420px;
+  width: 700px;
+  height: 700px;
+  background: url(../images/hero/LeftImg.jpg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  opacity: 0.4 !important;
+  z-index: -1;
+} 
+
+.games .rightImage{
+  content: '';
+  position: absolute;
+  right: 110px;
+  bottom: -420px;
+  width: 700px;
+  height: 700px;
+  background: url(../images/hero/rightImage.jpg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  opacity: 0.4 !important;
+  z-index: -1;
+} 
+
+@media screen and (max-width: 2000px) {
+  .games .leftImage {
+    left: 60px;
+    top: -220px;
+    width: 600px;
+    height: 600px;
+  }
+  .games .rightImage{
+    right:60px;
+    bottom: -420px;
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .games .leftImage {
+    left: 60px;
+    top: -220px;
+    width: 500px;
+    height: 500px;
+  }
+  .games .rightImage{
+    right: 60px;
+    bottom: -320px;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .games .leftImage {
+    left: 20px;
+    top: -220px;
+    width: 500px;
+    height: 500px;
+  }
+  .games .rightImage{
+    right: 20px;
+    bottom: -220px;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+
+
 .games .frame {
   direction: rtl;
   margin-top: 6rem;
@@ -796,7 +873,7 @@ nav {
   border-radius: 1.25rem;
 }
 .games .game-card:hover {
-  background-color: #2A1B3D;
+  /* background-color: #7d4fb875; */
 }
 .games .game-card .icon-bg {
   align-items: center;

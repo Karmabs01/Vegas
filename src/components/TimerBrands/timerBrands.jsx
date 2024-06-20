@@ -188,7 +188,10 @@ function TimerBrands({
         //   </div>
         // </section>
         <section className="games py-5" id="games">
-        <div className="container">
+            <div className="leftImage" data-aos="fade-down"></div>
+            <div className="rightImage" data-aos="fade-down"></div>
+
+        <div className="container bground">
           <div className="row">
             <div className="col-12">
               <div className="text-center">
@@ -198,8 +201,8 @@ function TimerBrands({
               <div className="row mt-5 align-items-center">
               {otherData.length > 0 ? (
                   otherData.slice(0, 1).map((rowData, index) => (
-                     <div key={index} className="col-12 col-md-6 col-lg-3 offset-lg-1" data-aos="fade-up">
-                     <div className="game-card text-center py-4 mb-4">
+                     <div key={index} className="col-12 col-lg-3 offset-lg-1" data-aos="fade-up">
+                     <div className="game-card text-center py-4">
                        <figure className="mb-0 icon-bg">
                        <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
                        </figure>
@@ -215,7 +218,7 @@ function TimerBrands({
                   <p className="no-available-brands">{t("No brands available for your country")}</p>
                 )}
                
-                <div className="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+                <div className="col-12 col-lg-4" data-aos="fade-up">
                   <div className="text-center py-4 mb-4">
                     <CountdownTimer targetDate={dateTime} />
                   </div>
@@ -223,8 +226,8 @@ function TimerBrands({
                 
                 {otherData.length > 0 ? (
                   otherData.slice(1, 2).map((rowData, index) => (
-                     <div key={index} className="col-12 col-md-6 col-lg-3" data-aos="fade-up">
-                     <div className="game-card text-center py-4 mb-4">
+                     <div key={index} className="col-12 col-lg-3" data-aos="fade-up">
+                     <div className="game-card text-center py-4">
                        <figure className="mb-0 icon-bg">
                        <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
                        </figure>

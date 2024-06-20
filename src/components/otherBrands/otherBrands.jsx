@@ -140,10 +140,10 @@ function OtherBrands({
     <div>
       {otherData.length > 0 && (
         <section className="experience py-5" id="howtoplay">
-          <div className="container">
+          <div className="container bground">
             <div className="row">
               <div className="col-12 col-lg-12">
-                <p className="mt-0 mt-lg-5 mb-3 theme-text-primary fs-4 fw-bold" data-aos="fade-up">{t("Best deals inside")}</p>
+                <p className="mt-0 mb-3 theme-text-primary fs-4 fw-bold" data-aos="fade-up">{t("Best deals inside")}</p>
                 <h2 className="display-1 mb-3 font-black heading" data-aos="fade-up">{t("Bellagio's Best Bets")}</h2>
               </div>
             </div>
