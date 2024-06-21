@@ -158,7 +158,7 @@ function OtherBrands({
                         <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
                       </figure>
                       <p className="p-4 mb-0 theme-text-accent-two fs-5 fw-bold">{rowData["OurOfferContent"]}</p>
-                      <a href={rowData["GoBig"] + newUrl + "L_vegas_2"}>
+                      <a target="_blank" href={rowData["GoBig"] + newUrl + "L_vegas_2"}>
                         <div className="group btn-wrap justify-content-center">
                           <button className="btn-primary custom-btn-primary">{t("Play Now")}</button>
                         </div>
@@ -175,12 +175,12 @@ function OtherBrands({
               <div className="col-12 mt-5 text-center" data-aos="fade-up">
                 <div className="group btn-wrap justify-content-center">
                   {isAllElements ? (
-                    <a href={`https://topbon.us/${newUrl}L_vegas_2`} className="button-drawing type--A" target="_blank">
+                    <a href={`https://topbon.us/${newUrl}L_vegas_2`} target="_blank">
                       <button className="btn-primary custom-btn-primary">{t("More offers")}</button>
 
                     </a>
                   ) : (
-                    <a className="button-drawing type--A" target="_blank"
+                    <a target="_blank"
                       onClick={loadMoreItems}>
                       <button className="btn-primary custom-btn-primary">{t("Show more")}</button>
                     </a>
