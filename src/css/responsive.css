@@ -390,14 +390,18 @@
   }
   .balanceWithdraw {
     font-size: 18px;
-    color: #000000;
+    color: #ffffff;
     font-weight: 900;
     margin-bottom: 10px;
+  }
+
+  .MuiPaper-root .balanceWithdraw {
+    color: #000000 !important;
   }
   .balanceWithdraw span {
     font-size: 18px;
     font-weight: 900;
-    color: #bb6a00;
+    color: #d83f87;
   }
   .mobile-menu .btn-menu {
     position: relative;
@@ -425,7 +429,7 @@
     margin-right: 10px;
   }
   .wallet p {
-    color: #000;
+    color: #ffffff;
     margin-left: 5px;
     font-size: 14px;
     font-weight: 700;
