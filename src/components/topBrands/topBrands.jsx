@@ -204,7 +204,7 @@ function TopBrands({
                         <h4 className="d-block fs-6 fw-bold mb-2 theme-text-secondary"><span>{rowData["CasinoBrand"]}</span></h4>
                         <div className="d-block fs-8 mb-2 theme-text-secondary">{rowData["OurOfferContent"]}</div>
                         <div className="d-flex align-items-center justify-content-between btn-wrap mt-2">
-                          <a arget="_blank" href={rowData["GoBig"] + newUrl + "L_vegas_1"}>
+                          <a target="_blank" href={rowData["GoBig"] + newUrl + "L_vegas_1"}>
                             <button className="btn-primary">{t("Play Now")}</button>
                           </a>
                         </div>
