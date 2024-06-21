@@ -321,9 +321,9 @@ p {
 
 @media (min-width: 320px) and (max-width: 420px) {
 
-  
-.experience .step-card button {
-  min-width: 60% !important;
-}
+  .experience .step-card button {
+    font-size: 14px !important;
+    min-width: 70px !important;
+  }
 }
 
