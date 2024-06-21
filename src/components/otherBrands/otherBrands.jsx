@@ -13,12 +13,13 @@ function OtherBrands({
   selectedCountry,
   setSelectedCountry,
 }) {
+  const stepSize = (window.innerWidth <= 991) ? 4 : 3
   const { t } = useTranslation();
 
   const [loading, setLoading] = useState(true);
   const [otherData, setOtherData] = useState([]);
   // const [visibleBrands, setVisibleBrands] = useState(8);
-  const [step, setStep] = useState(3);
+  const [step, setStep] = useState(stepSize);
   const [isAllElements, setAllElements] = useState(false);
 
 
@@ -44,7 +45,7 @@ function OtherBrands({
   }
 
   function loadMoreItems() {
-    setStep(prevIndex => prevIndex + 3);
+    setStep(prevIndex => prevIndex + stepSize);
   }
 
   useEffect(() => {
@@ -151,12 +152,12 @@ function OtherBrands({
               {/* <div className="line"></div> */}
               {otherData.length > 0 ? (
                 otherData.map((rowData, index) => (
-                  <div key={index} className="col-12 col-lg-4 col-sm-6 mb-4 mb-lg-0" data-aos="fade-up">
+                  <div key={index} className="col-6 col-lg-4 col-sm-6 mb-4 mb-lg-0" data-aos="fade-up">
                     <div className="text-center step-card">
                       <figure className="mb-0 image-icon">
                         <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
                       </figure>
-                      <p className="p-5 mb-0 theme-text-accent-two fs-5 fw-bold">{rowData["OurOfferContent"]}</p>
+                      <p className="p-4 mb-0 theme-text-accent-two fs-5 fw-bold">{rowData["OurOfferContent"]}</p>
                       <a href={rowData["GoBig"] + newUrl + "L_vegas_2"}>
                         <div className="group btn-wrap justify-content-center">
                           <button className="btn-primary custom-btn-primary">{t("Play Now")}</button>

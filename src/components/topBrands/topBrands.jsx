@@ -194,12 +194,12 @@ function TopBrands({
               {data.map((rowData, index) => (
                 <div className="item mb-3 mb-lg-0" key={index} data-aos="fade-up">
                   <div className="row g-0 list">
-                    <div className="col-12 col-md-4 col-xxl-4">
+                    <div className="col-6 col-md-4 col-xxl-4">
                       <figure className="image-icon mb-0">
                         <img src={rowData["LinkImg"]} alt={rowData["LinkImg"]} />
                       </figure>
                     </div>
-                    <div className="col-12 col-md-8 col-xxl-8">
+                    <div className="col-6 col-md-8 col-xxl-8">
                       <div className="p-3">
                         <h4 className="d-block fs-6 fw-bold mb-2 theme-text-secondary"><span>{rowData["CasinoBrand"]}</span></h4>
                         <div className="d-block fs-8 mb-2 theme-text-secondary">{rowData["OurOfferContent"]}</div>

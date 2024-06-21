@@ -35,8 +35,11 @@
   }
   .tickets a img {
     margin-right: 5px;
+    /* color: #ec6623; */
   }
-
+  .App {
+    min-height: 100vh;
+  }
   .App .unsubscribed {
     min-height: calc(100vh - 250px);
     display: flex;
@@ -49,7 +52,9 @@
   .brand {
     padding-bottom: 0;
   }
- 
+  .select-brand {
+    margin-top: 0 !important;
+  }
   .bgns .nosliders2 {
     width: 100%;
     padding-top: 10px;
@@ -174,7 +179,10 @@
   .game__two {
     padding-top: 0 !important;
   }
-
+  .cmn__items__game .game__overlay {
+    background: url(./public/banner-thumb.png) no-repeat top center !important;
+    background-size: cover !important;
+  }
   .cmn__items__game .game__overlay::before {
     background: #084298 !important;
   }
@@ -275,7 +283,17 @@
     margin-right: auto;
     flex-direction: column !important;
   }
-
+  .doublebrands .banner-slot1 {
+    /* background: url(/public/slot_orange.png) no-repeat left center; */
+    background-position: left center;
+    height: initial;
+  }
+  .doublebrands .banner-slot2 {
+    margin-top: 20px;
+    /* background: url(/public/slot_blue.png) no-repeat left center; */
+    background-position: left center;
+    height: initial;
+  }
   .doublebrands .another-brands .other-brands .all-brands .one-brand {
     flex-basis: 42%;
     margin-right: 0;
@@ -588,7 +606,11 @@
   .list-menu a span {
     margin-left: 4px;
   }
-
+  .banner {
+    background: url(../public/fwb.png) no-repeat center;
+    background-size: cover;
+    padding: 15px;
+  }
   .banner p {
     font-size: 28px;
   }
@@ -706,7 +728,24 @@
   .all-brands .one-brand {
     margin-right: 0;
   }
- 
+  /* .api-content .brand .flex div {
+        padding: 15px;
+    
+        border-radius: 15px;
+        width: 85%;
+        margin: 0 auto;
+        position: relative;
+      } */
+  /* .api-content .brand .flex div::after {
+        content: '';
+        position: absolute;
+        width: 61px;
+        height: 50px;
+        background: url(../public/badge.png) no-repeat center;
+        background-size: contain;
+        top: 10px;
+        right: 10px;
+      } */
   .api-content .brand .flex div .bonus {
     font-size: 18px;
   }

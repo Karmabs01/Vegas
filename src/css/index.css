@@ -293,3 +293,37 @@ p {
   background-color: #ffffff49;
   border-radius: 25px;
 }
+
+.games .game-card p{
+  overflow: hidden;
+  height: 100px;
+  text-overflow: ellipsis;
+}
+
+.games .game-card button{
+  /* font-size: 14px; */
+  min-width: 60% !important;
+}
+
+@media (min-width: 320px) and (max-width: 570px) {
+  .games .game-card p{
+    font-size: 14px !important;
+  }
+  
+  .games .game-card button{
+    font-size: 14px !important;
+  }
+  .experience .step-card p{
+    font-size: 14px !important;
+    padding: 10px !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+
+  
+.experience .step-card button {
+  min-width: 60% !important;
+}
+}
+

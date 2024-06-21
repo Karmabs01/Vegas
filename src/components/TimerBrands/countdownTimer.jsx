@@ -1,22 +1,13 @@
 import React from 'react';
 import { useCountdown } from './useCountdown';
 
-const ExpiredNotice = () => {
-  return (
-    <div className="expired-notice">
-      <span>Expired!!!</span>
-      <p>Please select a future date and time.</p>
-    </div>
-  );
-};
-
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
   return (
     <div id="timer" className="m-auto">
-      <div>
+      {/* <div>
         <p>{days}</p>
         <span>{'DAYS'}</span>
-      </div>
+      </div> */}
       <div>
         <p>{hours}</p>
         <span>{'HRS'}</span>
