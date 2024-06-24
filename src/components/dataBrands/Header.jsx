@@ -282,7 +282,7 @@ function ChildComponent() {
                 >
                   <MenuItem onClick={handleClose}>
                     <Link
-                     target="_blank"
+                      target="_blank"
                       to={`https://topbon.us/personal/${newUrl}`}
                       className="balanceWithdraw"
                     >
@@ -293,7 +293,7 @@ function ChildComponent() {
                   <Divider />
                   <MenuItem onClick={handleClose}>
                     <Link
-                     target="_blank"
+                      target="_blank"
                       to={`https://topbon.us/personal/${newUrl}`}
                       className="balanceWithdraw"
                     >
@@ -303,7 +303,7 @@ function ChildComponent() {
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
                     <Link
-                     target="_blank"
+                      target="_blank"
                       to={`https://topbon.us/fortune/${newUrl}`}
                       className="balanceWithdraw"
                     >
@@ -312,7 +312,7 @@ function ChildComponent() {
                     </Link>
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
-                    <Link  target="_blank" className="balanceWithdraw" to={`https://topbon.us/shop/${newUrl}`}>
+                    <Link target="_blank" className="balanceWithdraw" to={`https://topbon.us/shop/${newUrl}`}>
                       <img className="mr-1" src={`.${shop}`} alt={shop} />
                       {t("Cards shop")}
                     </Link>
@@ -328,7 +328,7 @@ function ChildComponent() {
               {Object.keys(user).length > 0 && (
                 <div className="flex items-center">
                   <Link
-                   target="_blank"
+                    target="_blank"
                     to={`https://topbon.us/personal/${newUrl}`}
                     className="wallet flex items-center"
                   >
@@ -349,7 +349,7 @@ function ChildComponent() {
                 <div className="list-menu">
                   {Object.keys(user).length > 0 && ( // Проверяем, есть ли данные в user
                     <Link
-                     target="_blank"
+                      target="_blank"
                       to={`https://topbon.us/personal/${newUrl}`}
                       className="balanceWithdraw"
                     >
@@ -360,7 +360,7 @@ function ChildComponent() {
                   <div className="mobile-menu-content">
                     {Object.keys(user).length > 0 && (
                       <Link
-                       target="_blank"
+                        target="_blank"
                         to={`https://topbon.us/fortune/${newUrl}`}
                         className="balanceWithdraw"
                       >
@@ -373,7 +373,7 @@ function ChildComponent() {
                   </div>
                   {Object.keys(user).length > 0 && (
                     <div>
-                      <Link  target="_blank" className="balanceWithdraw" to={`https://topbon.us/shop/${newUrl}`}>
+                      <Link target="_blank" className="balanceWithdraw" to={`https://topbon.us/shop/${newUrl}`}>
                         <img className="mr-1" src={`.${shop}`} alt={shop} />
                         {t("Cards shop")}
                       </Link>
