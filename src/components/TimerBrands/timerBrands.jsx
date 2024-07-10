@@ -36,6 +36,8 @@ function TimerBrands({
     const apiNew = "https://bonusnumber1.com/api/brandsNew2/read.php";
     const api1043 = "https://bonusnumber1.com/api/brandsNew3/read.php";
     const api1044 = "https://bonusnumber1.com/api/brandsNew4/read.php";
+    const apiCLD_VIP = "https://bonusnumber1.com/api/brandsNew5/read.php";
+
 
     function shuffleArray(array) {
         const shuffledArray = array.slice();
@@ -82,6 +84,9 @@ function TimerBrands({
                         break;
                     case "partner1044":
                         url = api1044; // Для partner1044
+                        break;
+                    case "CLD_VIP":
+                        url = apiCLD_VIP; // CLD_VIP
                         break;
                     default:
                         url = apiOld; // Для всех остальных случаев
@@ -290,7 +295,7 @@ function TimerBrands({
                                             <div className="middle-timer col-12 col-lg-4" data-aos="fade-up">
                                                 <div className="text-center py-4 mb-4">
                                                     <CountdownTimer targetDate={dateTime} />
-                                                    <h3 class="display-2 font-black theme-text-primary mb-0 mt-5">Last chance</h3>
+                                                    <h3 className="display-2 font-black theme-text-primary mb-0 mt-5">Last chance</h3>
                                                 </div>
                                             </div>
 
