@@ -1072,6 +1072,12 @@
 }
 
 @media screen and (max-width: 767px) {
+  .hero img {
+    visibility: hidden;
+  }
+  .hero {
+    height: 600px;
+  }
 
   .tt-title {
     font-size: 28px !important;
