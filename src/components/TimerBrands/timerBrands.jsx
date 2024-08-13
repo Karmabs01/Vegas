@@ -88,6 +88,9 @@ function TimerBrands({
                     case "CLD_VIP":
                         url = apiCLD_VIP; // CLD_VIP
                         break;
+                    case "partner1045":
+                        url = apiCLD_VIP; // CLD_VIP
+                        break;
                     default:
                         url = apiOld; // Для всех остальных случаев
                 }
